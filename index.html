@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Features</title>
+    <style>
+      .field {
+        border: 3px solid rgb(199, 181, 47);
+      }
+      .bat {
+        transition: transform 0.5s ease-in;
+      }
+
+      .field:hover .bat {
+        transform: rotate(-60deg);
+      }
+      .field:hover .ball {
+        transform: translate(500px, -200px);
+      }
+      .ball {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: red;
+        position: relative;
+        left: 270px;
+        transition: transform 0.5s ease-in 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="field">
+      <img src="images/bat.png" alt="cricket bat" class="bat" />
+      <div class="ball"></div>
+    </div>
+    <div>
+      <h2><a href="animatede-ball.html" target="_blank">Explore more!</a></h2>
+    </div>
+  </body>
+</html>
